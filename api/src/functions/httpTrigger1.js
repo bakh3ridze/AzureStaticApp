@@ -15,13 +15,13 @@ app.http('function1', {
          }
         const data = await response.json();
 
-        const response2 = await fetch('https://api-bdc.net/data/client-info');
-        if (!response2.ok) {
-         throw new Error('Network response was not ok');
-        }
-        const data2 = await response2.json();
+        // const response2 = await fetch('https://api-bdc.net/data/client-info');
+        // if (!response2.ok) {
+        //  throw new Error('Network response was not ok');
+        // }
+        // const data2 = await response2.json();
 
 
-        return { jsonBody: {data, data2} };
+        return { jsonBody: {data} };
     }
 });
