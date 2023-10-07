@@ -9,11 +9,11 @@ app.http('function1', {
         // const ip = request.ip;
         // const userAgent = request.headers['user-agent'];
 
-         const response = await fetch('https://ipinfo.io/json');
-         if (!response.ok) {
-          throw new Error('Network response was not ok');
-         }
-        const data = await response.json();
+        //  const response = await fetch('https://ipinfo.io/json');
+        //  if (!response.ok) {
+        //   throw new Error('Network response was not ok');
+        //  }
+        // const data = await response.json();
 
         // const response2 = await fetch('https://api-bdc.net/data/client-info');
         // if (!response2.ok) {
@@ -22,6 +22,8 @@ app.http('function1', {
         // const data2 = await response2.json();
 
 
-        return { jsonBody: {data} };
+        // return { jsonBody: {data} };
+
+        return { jsonBody: "Hello World!" };
     }
 });
